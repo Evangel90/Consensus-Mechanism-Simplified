@@ -1,0 +1,21 @@
+# Consensus mechanism demystified
+Blockchains utilize different mechanisms in order to achieve consensus(agreement). But in understanding these mechanism, we have to first understand the need for consensus.
+
+In a system where anyone is welcome to participate, like in the case of public blockchain networks, there has to be a way for the participant of the network to agree on the state of the blockchain.
+
+The state of the blockchain is altered by transactions, that are then packed into blocks and then cryptographically connected to the already agreed upon chain (canonical chain).
+
+In a situation where a participant of the network alters the state of the blockchain without the agreement of other participants, their is said to be no consensus. 
+
+What about in situations where groups of participants in the network agree on a particular state of the blockchain and other groups disagree?
+
+Consensus mechanism is how different blockchains determine which group wins and what the correct state of the blockchain is.
+
+
+## Using bitcoin and ethereum as case study
+Bitcoin and Ethereum are both public blockchains in which anyone is welcome to participate, with a caveat. Not every participant would be allowed to alter the state of the blockchain.
+
+>Remember, consensus is needed when there is an attempt to alter the state of the blockchain. 
+
+### Bitcoin
+The only nodes who can alter the state of the bitcoin blockchain are nodes with sufficient computation power to solve the mathematical puzzle posed by the bitcoin network when attempting to make those state changes.
