@@ -37,10 +37,16 @@ This whole process, pre-consensus + main consensus process, for bitcoin is know 
 ### Ethereum
 In other for a node to be able to propose a change of state to the ethereum blockchain, that node must have at least **32 ETH** staked on the ethereum network, **proof-of-stake (PoS)**.
 
-Unlike bitcoin, the nodes who proposes the next block is chosen randomly from a group of eligible nodes. 
+Unlike bitcoin, the nodes who proposes the next block is chosen randomly from a group of eligible nodes and are known as validators. 
 
-Consensus is determined in ethereum by a group of validator nodes who validate the proposed block and broadcast to the network that the block has been validated or not. Every node still validates the block before adding it to their respective chains. 
+Consensus is determined in ethereum by a group of validator nodes who attest to the proposed block by the chosen block proposer and then broadcasts to the network that the block has been validated or not. Every node still validates the block before adding it to their respective chains. 
 
->Here, the canonical chain is determined by a committee of validators. Other nodes follow, though they still perform some level of validation individually
+>Here, the canonical chain is determined by a committee of validators. Other nodes follow, though they still perform validation individually and refuse to add blocks to their chain if malicious activities is detected.
 
-Validators use a consensus mechanism know as Gasper
+Validators use a consensus mechanism know as Gasper to determine the canonical chain in case of a divergence. Gasper determines the rules of consensus every ethereum node follows
+
+[Gasper](https://ethereum.org/developers/docs/consensus-mechanisms/pos/gasper/) is a combination of Casper-FFG and LMD-GHOST fork choice algorithm. 
+
+Together these components form the consensus mechanism securing proof-of-stake Ethereum. Casper is the mechanism that upgrades certain blocks to "finalized" so that new entrants into the network can be confident that they are syncing the canonical chain. The fork choice algorithm uses accumulated votes to ensure that nodes can easily select the correct one when forks or divergence arise in the blockchain. 
+
+
