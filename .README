@@ -51,3 +51,12 @@ Validators use a consensus mechanism known as Gasper to determine the canonical 
 
 Together, these components form the consensus mechanism securing proof-of-stake Ethereum. Casper is the mechanism that upgrades certain blocks to "finalized" so that new entrants into the network can be confident that they are syncing the canonical chain. The fork choice algorithm uses accumulated votes to ensure that nodes can easily select the correct one when forks or divergences arise in the blockchain.
 
+## Conclusion
+
+While Bitcoin and Ethereum employ fundamentally different consensus mechanisms, one based on computational work, the other on economic stake, both achieve the same ultimate goal: enabling a decentralized network of participants to agree on a single, canonical version of the blockchain.
+
+Bitcoin's Nakamoto consensus prioritizes openness and resistance to coordinated attacks through computational difficulty, making it harder for any single entity to control the network through sheer power. Ethereum's Gasper consensus, conversely, leverages economic incentives and committee-based validation, enabling faster finality and lower energy consumption.
+
+The choice of consensus mechanism reflects each blockchain's design philosophy: Bitcoin emphasizes absolute decentralization and immutability through proof-of-work, while Ethereum prioritizes scalability and sustainability through proof-of-stake. Understanding these mechanisms is essential for grasping how blockchains maintain security and trust without central authority.
+
+
