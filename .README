@@ -34,3 +34,13 @@ The longest chain rule implies that the chain that has the highest proof-of-work
 
 This whole process, pre-consensus + main consensus process, for bitcoin is know as **Nakamoto's consensus**.
 
+### Ethereum
+In other for a node to be able to propose a change of state to the ethereum blockchain, that node must have at least **32 ETH** staked on the ethereum network, **proof-of-stake (PoS)**.
+
+Unlike bitcoin, the nodes who proposes the next block is chosen randomly from a group of eligible nodes. 
+
+Consensus is determined in ethereum by a group of validator nodes who validate the proposed block and broadcast to the network that the block has been validated or not. Every node still validates the block before adding it to their respective chains. 
+
+>Here, the canonical chain is determined by a committee of validators. Other nodes follow, though they still perform some level of validation individually
+
+Validators use a consensus mechanism know as Gasper
